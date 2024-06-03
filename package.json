@@ -1,0 +1,32 @@
+{
+  "name": "wamessagebox",
+  "version": "1.0.6",
+  "description": "Whatsapp Message Box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javapixa Creative Studio",
+  "license": "ISC",
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^7.0.0",
+    "@ckeditor/ckeditor5-watchdog": "^41.4.2",
+    "axios": "^1.7.2",
+    "ckeditor5-custom-build": "^0.0.6",
+    "emoji-picker-react": "^4.9.3",
+    "next": "14.2.3",
+    "pixa-simple-ckeditor5": "^0.0.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.5"
+  }
+}
