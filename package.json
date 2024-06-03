@@ -1,6 +1,6 @@
 {
   "name": "wamessagebox",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Whatsapp Message Box",
   "main": "index.js",
   "scripts": {
