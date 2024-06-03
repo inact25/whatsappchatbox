@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wamessagebox.iml" filepath="$PROJECT_DIR$/wamessagebox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/whatsappchatbox.iml" filepath="$PROJECT_DIR$/.idea/whatsappchatbox.iml" />
     </modules>
   </component>
 </project>
