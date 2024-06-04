@@ -1,6 +1,6 @@
 {
   "name": "wamessagebox",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Whatsapp Message Box",
   "main": "dist/bundle.js",
   "types": "dist/bundle.d.ts",
