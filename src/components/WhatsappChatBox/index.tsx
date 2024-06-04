@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import EmojiPicker from 'emoji-picker-react'
-import WhatsappEditor from '../whatsappEditor'
-import Emoti from '../whatsappEditor/svgs/emoti.svg'
+import WhatsappEditor from '../WhatsappEditor'
+import Emoti from '../WhatsappEditor/svgs/emoti.svg'
 
 type Props = {
   value: string
@@ -21,7 +21,6 @@ const WhatsappChatBox: React.FC<Props> = ({ value, onChange, title, max }) => {
     return (doc.body.innerText = doc.body.innerText + emoji)
   }
   const convertHtml = (html: string) => {
-    const parser = new DOMParser()
     const doc = htmlToText(html)
 
     const boldTags = doc.querySelectorAll('strong')
@@ -29,7 +28,7 @@ const WhatsappChatBox: React.FC<Props> = ({ value, onChange, title, max }) => {
       tag.innerText = tag.innerText
         .split(' ')
         .map((item) => {
-          let manipulateSpace = item.replaceAll(/&nbsp;|\u00A0/g, '')
+          let manipulateSpace = item.replace(/&nbsp;|\u00A0/g, '')
           if (manipulateSpace.length !== 0) return `*${item}* `
         })
         .join(' ')
@@ -40,7 +39,7 @@ const WhatsappChatBox: React.FC<Props> = ({ value, onChange, title, max }) => {
       tag.innerText = tag.innerText
         .split(' ')
         .map((item) => {
-          let manipulateSpace = item.replaceAll(/&nbsp;|\u00A0/g, '')
+          let manipulateSpace = item.replace(/&nbsp;|\u00A0/g, '')
           if (manipulateSpace.length !== 0) return `_${item}_ `
         })
         .join(' ')
@@ -51,7 +50,7 @@ const WhatsappChatBox: React.FC<Props> = ({ value, onChange, title, max }) => {
       tag.innerText = tag.innerText
         .split(' ')
         .map((item) => {
-          let manipulateSpace = item.replaceAll(/&nbsp;|\u00A0/g, '')
+          let manipulateSpace = item.replace(/&nbsp;|\u00A0/g, '')
           if (manipulateSpace.length !== 0) return `~${item}~ `
         })
         .join(' ')
