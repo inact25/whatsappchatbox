@@ -1,3 +1,2 @@
-import WhatsappChatBox from './components/WhatsappChatBox'
-import WhatsappEditor from './components/WhatsappEditor'
-export { WhatsappChatBox, WhatsappEditor }
+export { default as WhatsappChatBox } from './components/WhatsappChatBox';
+export { default as WhatsappEditor } from './components/WhatsappEditor';
